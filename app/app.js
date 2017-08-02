@@ -12,6 +12,11 @@ angular.module('starwars').config(($stateProvider, $urlRouterProvider)=>{
             templateUrl: 'app/views/starships/starshipsTemplate.html',
             controller:'starshipsCtrl'
         })
+        .state('starship', {
+            url:'/starships/:id',
+            templateUrl: 'app/views/starship/starshipTemplate.html',
+            controller:'starshipCtrl'
+        })
 
     $urlRouterProvider.otherwise('/')
 })
